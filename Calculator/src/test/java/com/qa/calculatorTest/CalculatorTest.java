@@ -16,8 +16,12 @@ public class CalculatorTest {
 	
 	@Test
 	public void addition() {
-		
 		int actualValue = calc.add(2,2);
 		assertEquals("Addition error", 4, actualValue);
+	}
+	@Test
+	public void division() {
+		int actualValue = calc.divide(8,4);
+		assertEquals("Division error", 2, actualValue);
 	}
 }
